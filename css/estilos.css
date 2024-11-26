@@ -1,0 +1,178 @@
+body 
+{
+    font-family: Arial, sans-serif;
+    background-color: antiquewhite;
+    margin: 0;
+    padding: 0;
+}
+
+table 
+{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    background-color: lightblue;
+}
+
+th, td 
+{
+    border: 1px solid black;
+    padding: 5px;
+    text-align: left;
+}
+
+th 
+{
+    background-color: rebeccapurple;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+
+tr:hover 
+{
+    background-color: #e0e0e0;
+}
+
+button 
+{
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+
+.btnModify, .btnDelete 
+{
+    margin: 0 0 0 23%;
+}
+
+.botonAgregarContainer {
+    display:flex;
+    justify-content: center;
+    
+}
+.btnAgregar {
+
+    padding: 15px 20px 15px 20px;
+    border: solid 3px lightblue;
+    
+}
+
+.btnAgregar, .btnModify, .btnAceptar, .btnAceptarBaja
+{
+    background-color: blue;
+}
+
+.btnAgregar:hover, .btnModify:hover, .btnAceptar:hover, .btnAceptarBaja:hover
+{
+    background-color: green;
+}
+
+.btnDelete, .btnCancelar 
+{
+    background-color: red;
+}
+
+.btnDelete:hover, .btnCancelar:hover 
+{
+    background-color: red;
+}
+
+.abmContainer 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.abmForm 
+{
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px black;
+    width: 320px;
+}
+
+.abmForm h1 
+{
+    margin-top: 0;
+    color: black;
+}
+
+.abmForm form p 
+{
+    margin: 10px 0;
+}
+
+.abmForm form input, .abmForm form select 
+{
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+.spinnerContainer 
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.spinner 
+{
+    display: inline-block;
+    width: 500px;
+    height: 500px;
+}
+
+.spinner:after 
+{
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid cornflowerblue;
+    border-color: cornflowerblue transparent cornflowerblue transparent;
+    animation: spinnerAnimation 1.2s linear infinite;
+}
+
+@keyframes spinnerAnimation 
+{
+    0% 
+    {
+        transform: rotate(0deg);
+    }
+    100% 
+    {
+        transform: rotate(360deg);
+    }
+}
+
+.formularioContainer 
+{
+    width: 80%;
+    margin: 0 emplead;
+    padding: 20px;
+    background-color: beige;
+    border-radius: 10px;
+    box-shadow: 0 0 15px black;
+}
+
